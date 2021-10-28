@@ -1,0 +1,145 @@
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.logo {
+    width: 7rem;
+    height: auto;
+}
+
+hr {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  margin: var(--space-xs) 0;
+  border-color: var(--colour-black);
+  border-width: var(--width-primary) 0 0 0;
+}
+
+/* BUTTONS */
+.btn {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: var(--text-sm);
+  padding: 0rem var(--space-lg);
+  text-align: center;
+  line-height: 3.3rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--colour-accent-shade2);
+  color: var(--colour-primary);
+}
+
+.btn-secondary{
+  background-color: var(--colour-primary-shade2);
+  color: var(--colour-primary);
+}
+
+.btn-text {
+  float: right;
+  font-size: var(--text-md);
+  padding: 0;
+}
+
+.btn-text-left {
+  float: left;
+}
+
+.btn-add-to-cart{
+  margin-top: 0.7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-checkout{
+  float: right;
+}
+
+.btn-primary:hover{
+  background: var(--colour-accent-shade1);
+}
+
+.btn-secondary:hover{
+  background: var(--colour-primary-shade3);
+}
+
+.same-row{
+  display: inline-block;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.heading-same-row{
+  float: left;
+  line-height: 40px;
+}
+
+.btn-view-all{
+  float: right;
+  line-height: 40px;
+}
+
+/*SORT*/
+.side-panel  {
+  z-index: 999;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 10rem;
+  left: 0;
+  background-color: var(--colour-accent-shade1);
+  overflow: hidden;
+  transition: 0.5s;
+  height: 11rem;
+  padding: var(--space-md) 0;
+}
+
+.side-panel a {
+  z-index: 999;
+  padding: var(--space-xxs) var(--space-md);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  color: var(--colour-black);
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.side-panel .close-btn {
+  position: relative;
+  float: right;
+  height: 11rem;
+  width: 4rem;
+  top: -8rem;
+  background-color: var(--colour-accent-shade2);
+  transform: rotate(90deg) translateZ(0);
+  transform-origin: left bottom;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.open-btn {
+  left: 0;
+  top: 6rem;
+  cursor: pointer;
+  position: fixed;
+  height: 4rem;
+  width: 11rem;
+  background-color: var(--colour-accent-shade2);
+  padding: 6px 0 0;
+  border: none;
+  transform: rotate(90deg) translateZ(0);
+  transform-origin: left bottom;
+  cursor: pointer;
+}
+
+.open-btn:hover {
+  background-color:var(--colour-accent-shade1);
+}

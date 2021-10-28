@@ -1,0 +1,43 @@
+.nav-content .search-container .btn{
+  float: right;
+  padding: 0rem 1.5rem;
+  margin-right: 2.6rem;
+}
+  
+.checkout-container-left {
+  width: 70%;
+}
+
+.checkout-container-right {
+  width: 30%;
+  float: right;
+  background-color: var(--colour-primary-shade2);
+  height: 100vh;
+}
+
+.checkout-container-left input[type=text], select, textarea  {
+  box-sizing: border-box;
+  margin-bottom: 16px; 
+  font-family: var(--font-secondary);
+  padding: var(--space-md);
+  background-color: var(--colour-primary-shade1);
+  border: var(--width-primary) solid var(--colour-black);
+}
+
+.checkout-container-left h3 {
+  font-size: var(--text-md);
+}
+
+.cart-pay-buttons-container {
+  height: 10rem;
+  margin-top: var(--space-lg);
+  display: inline-block;
+}
+
+.cart-pay-buttons-container .btn-primary {
+  float: right;
+}
+
+.cart-pay-buttons-container .btn-text-left {
+  float: left;
+}

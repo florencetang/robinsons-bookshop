@@ -1,0 +1,145 @@
+/* PRODUCTS GRID LAYOUT */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+
+.products-grid {
+    background-color: var(--colour-primary-shade1);
+    width: 100%;
+}
+
+.product{
+    margin-right: var(--space-sm);
+    position: relative;
+    width: 11rem; 
+}
+
+.product-content {
+    background: var(--colour-primary-shade2);
+    margin-top: 0;
+    width: 11rem;
+    height: 13rem;
+    line-height: 13rem;
+    text-align: center;
+}
+
+.product-img {
+    max-width: 100%;
+    max-height: 13rem;
+    vertical-align: middle;
+    background-color: inherit;
+    object-fit: cover;
+    overflow: hidden;
+    padding: var(--space-md);
+    margin: auto;
+}
+
+.product-info{
+    width: inherit;
+    padding: var(--space-sm) 0;
+    text-align: left;
+    font-family: var(--font-secondary);
+    font-size: var(--text-sm);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: var(--space-md);
+}
+
+.product-sm{
+    margin-right: var(--space-sm);
+    position: relative;
+    width: 10.5rem; 
+}
+
+.product-content-sm {
+    background: var(--colour-primary-shade2);
+    margin-top: 0;
+    width: 10.5rem;
+    height: 13rem;
+    line-height: 13rem;
+    text-align: center;
+}
+
+.product-title{
+    font-weight: 600;
+}
+
+.product-author{
+    font-weight: 500;
+}
+
+.product-price{
+    font-weight: 600;
+}
+
+/* INDIVIDUAL PRODUCT PAGE */
+.product-individual-container {
+    position: relative;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.product-individual-content {
+    background: var(--colour-primary-shade2);
+    margin-top: 0;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    line-height: 20rem;
+}
+
+.product-individual-info h2:first-child {
+    margin-top: var(--space-sm);
+}
+
+.product-individual-info h2, 
+.product-individual-info p{
+    line-height: 160%;
+}
+
+.product-individual-img {
+    max-width: 90%;
+    max-height: 20rem;
+    vertical-align: middle;
+    background-color: inherit;
+    object-fit: cover;
+    
+    overflow: hidden;
+    padding: var(--space-xl);
+}
+
+.store-availability-container{
+    margin: var(--space-xxs) 0;
+  }
+  
+.store-availability-container input[type=text] {
+    background: var(--colour-primary-shade2);
+    font-family: var(--font-secondary);
+    float: left;
+    padding: 1.1rem 1rem;
+    border: none;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--colour-black);
+    width: 28.4rem;
+    margin-right: -1rem;
+}
+  
+.store-availability-container .btn{
+    float: right;
+    text-align: left;
+}
+
+.store-availability h2{
+    font-family: var(--font-primary);
+    font-size: var(--text-lg);
+}
+

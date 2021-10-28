@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robinsons Bookshop</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/styles.css">
+  	<link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
+    <!-- <script src="js/navbar.js"></script> -->
+</head>
+
+<body>
+
+<div class="nav-bar">
+  <div class="nav-content container cluster">
+    <div class="cluster">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+  
+      <div class="dropdown nav-bar-left cluster">
+        <button class="dropbtn">SHOP▾</button>
+        <div class="dropdown-content">
+          <li><a href="#">Books▸</a>
+          <ul class="sub-dropdown">
+            <li><a href="fiction.html">Fiction▸</a></li> 
+          </ul>  
+          <li><a href="#">Gifts▸</a></li>
+          <li><a href="#">Stationery▸</a></li>
+          <a href="#">Games▸</a>
+      </div>
+      
+      <button class="dropbtn">EVENTS</button>
+      <button class="dropbtn">LOCATIONS</button>
+    </div>
+  </div>
+
+  <div class="cluster">
+    <div class="search search-container cluster">
+        <input type="text" placeholder="Search by keyword, title, author or ISBN">
+        <a href="books.html" class="btn btn-primary">SEARCH</a>
+    </div>
+    <a class="cart" href="cart.html"><img src="img/icons/cart.svg" alt="cart"></a>
+    <a class="account" href="account.html"><img src="img/icons/account.svg" alt="account"></a>
+  </div>
+
+<div class="hamburger-nav">
+  <input type="checkbox" id="menu"/>
+  <label for="menu"><img src="img/icons/menu.svg"></label>
+
+  <div class="multi-level">
+      <div class="item">
+          <input type="checkbox" id="A"/>
+          <label for="A">SHOP</label><img src="img/icons/arrow.svg" class="arrow">
+
+      <ul>
+          <li><div class="sub-item">
+          <input type="checkbox" id="A-A"/>
+          <label for="A-A">Books</label><img src="img/icons/arrow.svg" class="arrow">
+
+          <ul>
+            <li><div class="sub-sub-item">
+              <input type="checkbox" id="A-A-A"/>
+              <label for="A-A-A">Fiction</label><img src="img/icons/arrow.svg" class="arrow">
+                <ul>
+                  <li><a href="fiction.html">All Fiction</a></li>
+                  <li><a href="#">Modern Literature</a></li>
+                  <li><a href="#">Crime & Mystery</a></li>
+                  <li><a href="#">Fantasy</a></li>
+                  <li><a href="#">Romance</a></li>
+                  <li><a href="#">Classics</a></li>
+                  <li><a href="#">Young Adult</a></li>
+                </ul>
+              </div>
+            
+            <li><div class="sub-sub-item">
+              <input type="checkbox" id="A-A-B"/>
+              <label for="A-A-B">Non-Fiction</label><img src="img/icons/arrow.svg" class="arrow">
+                <ul>
+                  <li><a href="#">All Non-Fiction</a></li>
+                  <li><a href="#">Biography & Memoir</a></li>
+                  <li><a href="#">Business & Finance</a></li>
+                  <li><a href="#">Food & Drink</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Self-Help & Motivation</a></li>
+                  <li><a href="#">Travel</a></li>
+                </ul>
+                </div>
+
+            <li><div class="sub-sub-item">
+              <input type="checkbox" id="A-A-C"/>
+              <label for="A-A-C">Kids</label><img src="img/icons/arrow.svg" class="arrow">
+                <ul>
+                  <li><div class="sub-sub-sub-item">
+                    <input type="checkbox" id="A-A-C-A"/>
+                    <label for="A-A-C-A">By Age</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><a href="#">0-2 Years</a></li>
+                        <li><a href="#">3-5 Years</a></li>
+                        <li><a href="#">6-8 Years</a></li>
+                        <li><a href="#">9-11 Years</a></li>
+                        <li><a href="#">12-14 Years</a></li>
+                        <li><a href="#">14+ Years</a></li>
+                      </ul>
+                      
+                  <li><div class="sub-sub-sub-item">
+                    <input type="checkbox" id="A-A-C-B"/>
+                    <label for="A-A-C-B">By Genre</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><a href="#">General Fiction</a></li>
+                        <li><a href="#">General Non-Fiction</a></li>
+                        <li><a href="#">Classics</a></li>
+                        <li><a href="#">Art & Activity</a></li>
+                        <li><a href="#">Jokes & Riddles</a></li>
+                        <li><a href="#">Picture Books</a></li>
+                      </ul>
+                </ul>
+
+            <li><div class="sub-sub-item">
+              <input type="checkbox" id="A-A-D"/>
+              <label for="A-A-D">Graus Comix</label><img src="img/icons/arrow.svg" class="arrow">
+                <ul>
+                  <li><a href="#">Manga</a></li>
+                  <li><a href="#">Comics</a></li>
+                  <li><a href="#">Graphic Novels</a></li>
+                </ul>
+              </div>
+      </ul>
+  </div>
+</div>
+  
+  <div class="item">
+      <input type="checkbox" id="B"/>
+      <label for="B">EVENTS</label>
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="C"/>
+    <label for="C">LOCATIONS</label>
+  </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+<div class="hero-container">
+  <div class="container hero">
+    <div class="hero-wrapper">
+      <div class="hero-copy-container">
+        <h1 class="hero-title-lg">Welcome to Robinsons Bookshop, your <i>favourite</i> local bookstore.</h1>
+        <h1 class="hero-title-sm">Your <i>favourite</i> local bookstore.</h1>
+        <p class="hero-copy">As one of the oldest independent bookshops in Victoria with over 5 million titles to choose from, there is a book for everyone at Robinsons.</p>
+        <a href="fiction.html" class="btn btn-primary">SHOP NOW</a>
+      </div>
+  
+      <div class="hero-img">
+        <img class="hero-img-lg" src="img/home/hero-1-lg.png" alt="stack of books"></img>
+        <img class="hero-img-sm" src="img/home/hero-1-sm.png" alt="stack of books"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container home-divider">
+  <hr>
+</div>
+
+<div class="container">
+  <div class="featured-products-row">
+    <div class="grid">
+      <div>
+        <h2>Bestsellers<a href="#" class="btn btn-text">VIEW ALL ▸</a></h2>
+      </div>
+      
+      <div class="row">
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/spot-goes-to-school.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Spot Goes To School</a>
+            <p class="product-author">Eric Hill</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/starting-school-1.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Starting School</a>
+            <p class="product-author">Anna Walker, Jane Godwin</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/old-friends-new-friends.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Old Friends New Friends</a>
+            <p class="product-author">Andrew Daddo, Jonathon Bentley</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/my-first-day-at-school.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">My First Day At School</a>
+            <p class="product-author">Rosie Smith, Bruce Whotle</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/i-have-to-start-school-today.jpeg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">I Have To Start School Today</a>
+            <p class="product-author">Ged Adamson, Simon Philips</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/grug-goes-to-school-1.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Grug Goes To School</a>
+            <p class="product-author">Ted Prior</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="featured-categories-bg">
+  <div class="container">
+    <h2>Featured Categories</h2>
+      <div class="featured-categories">
+        <div class="category">
+          <div class="category-content">
+            <img class="category-img" src="img/home/category-fiction.svg">
+            <div class="category-name">
+              <h3>Fiction</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="category">
+          <div class="category-content">
+            <img class="category-img" src="img/home/category-youngadult.svg">
+            <div class="category-name">
+              <h3>Young Adult</h3>
+            </div>
+          </div>
+        </div>
+        
+        <div class="category">
+          <div class="category-content">
+            <img class="category-img" src="img/home/category-crime.svg">
+            <div class="category-name">
+              <h3>Crime</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+  
+<div class="container">
+  <div class="featured-products-row">
+    <div class="grid">
+      <div>
+        <h2>New Releases<a href="#" class="btn btn-text">VIEW ALL ▸</a></h2>
+      </div>
+      
+      <div class="row">
+        <div class="spacing col-1"></div>
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/klara-and-the-sun.jpg">
+          </div>
+          <div class="product-info">
+            <a href="klara-and-the-sun.html" class="product-title">Spot Goes To School</a>
+            <p class="product-author">Eric Hill</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/the-care-factor.jpeg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Starting School</a>
+            <p class="product-author">Anna Walker, Jane Godwin</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/emotional-female.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Old Friends New Friends</a>
+            <p class="product-author">Andrew Daddo, Jonathon Bentley</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/when-the-apricots-bloom.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">My First Day At School</a>
+            <p class="product-author">Rosie Smith, Bruce Whotle</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/liftoff.jpeg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">I Have To Start School Today</a>
+            <p class="product-author">Ged Adamson, Simon Philips</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        <div class="product col-2">
+          <div class="product-content">
+            <img class="product-img" src="img/books/first-person-singular.jpg">
+          </div>
+          <div class="product-info">
+            <a href="#" class="product-title">Grug Goes To School</a>
+            <p class="product-author">Ted Prior</p>
+            <p class="product-price">$14.99</p>
+            <a href="#" class="btn btn-primary btn-add-to-cart">ADD TO CART</a>
+          </div>
+        </div>
+    
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="footer-wrapper">
+  <div class="container">
+    <div class="footer">
+    <div class="logo col-2">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+    </div>
+
+    <div class="follow col-2">
+      <h4>FOLLOW</h4>
+        <ul class="socials">
+          <li><a href="#"><img src="img/social/facebook.svg" alt="facebook" class="social"></a></li>
+          <li><a href="#"><img src="img/social/instagram.svg" alt="instagram" class="social"></a></li>
+          <li><a href="#"><img src="img/social/twitter.svg" alt="twitter" class="social"></a></li>
+        </ul>
+    </div>
+  
+    <div class="info col-2">
+      <h4>INFO</h4>
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy Policy</li>
+          <li>Shipping & Returns</li>
+        </ul>
+    </div>
+  
+    <div class="signup col-6">
+      <h4>STAY UPDATED</h4>
+      <p>Sign up to our mailing list to keep updated on upcoming events, product releases and promotions.</p>
+      <div class="email-container">
+        <input type="text" placeholder="Enter your email address">
+        <a href="#" class="btn btn-secondary">SIGN UP</a>
+    </div>
+  </div>
+</div>
+
+</div>
+</div></div>
+</body>
+
+
+
+</html>

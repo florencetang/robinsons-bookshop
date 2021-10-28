@@ -1,0 +1,259 @@
+html, body {
+  font-family: var(--font-primary), serif;
+  color: var(--colour-primary);
+  background-color: var(--colour-primary-shade1);
+  /* max-width: 1200px; */
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.3333%;}
+  .col-2 {width: 16.6667%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.3333%;}
+  .col-5 {width: 41.6667%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.3333%;}
+  .col-8 {width: 66.6667%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.3333%;}
+  .col-11 {width: 91.6667%;}
+  .col-12 {width: 100%;}
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-x: hidden;
+}
+
+/* HERO */
+.hero-container {
+  width: 100%;
+  height: 26rem;
+  background-color: var(--colour-primary-shade1);
+}
+
+.hero {
+  width: 100%;
+  display: grid;
+}
+
+.hero-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: var(--space-xxs);
+}
+
+.hero-copy-container {
+  width: 50%;
+  padding-right: var(--space-lg);
+}
+
+.hero-title-lg {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.hero-title-sm {
+  display: none;
+  margin-bottom: var(--space-xxs);
+}
+
+.hero-copy {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.hero-img {
+  width: 50%;
+  margin-bottom: var(--space-md);
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+.hero-img-sm {
+  display: none;
+}
+
+.hero-cta .btn {
+  margin-top: var(--space-md);
+}
+
+/* GRIDS AND ROWS */
+.row {
+  float: left;
+}
+ 
+.row::after {
+  content: " ";
+  display: block;
+  clear: both;
+} 
+
+.grid::before,
+.grid::after,
+.row::before,
+.row::after {
+  content: " ";
+  display: table;
+}
+
+.grid::after,
+.row::after {
+  clear: both;
+}
+
+.row div:last-child{
+  margin-right: 0;
+}
+
+/* FEATURED PRODUCTS */
+.featured-products-row {
+  margin-top: var(--space-md);
+  background-color: var(--colour-primary-shade1);
+  width: 100%;
+}
+
+.featured-categories-bg {
+  background-color: var(--colour-primary-shade2);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
+}
+
+.featured-categories {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  align-content: stretch;
+  grid-auto-flow: column;
+  margin-top: var(--space-md);
+  gap: var(--space-md);
+}
+
+.category-content {
+  width: 24rem;
+  background: var(--colour-primary-shade1);
+  text-align: center;
+  cursor: pointer;
+  display: block;
+}
+
+.category-img {
+  width: inherit;
+  background-color: inherit;
+  margin-top: 0;
+}
+
+.category-name{
+  background-color: var(--colour-primary-shade1);
+  width: 100%;
+  padding: var(--space-md) 0;
+  border-top: var(--width-primary) solid var(--colour-black);
+}
+
+/* PAGINATION */
+.pagination {
+  display: inline-block;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: var(--text-md);
+  width: 100%;
+  text-align: center;
+  padding-bottom: var(--space-lg);
+}
+
+.pagination a {
+  color: var(--colour-black);
+  padding: 0.7rem 0.9rem 0.6rem 0.9rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.pagination a.active {
+  background-color: var(--colour-accent-shade2);
+  border-radius: 5rem;
+}
+
+/* PRODUCT LISTINGS PRODUCT PATH */
+.product-path {
+  margin: var(--space-xs) 0 var(--space-md) 0;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 750px) {
+  body, html {
+      margin-top: 2.7rem;
+      overflow-x: hidden;
+  }
+
+  .hero .hero-title-lg,
+  .hero .hero-copy {
+      display: none;
+  }
+
+  .hero .hero-title-sm {
+      display: inline-block;     
+  }
+
+  .hero-img-lg {
+      display: none;
+  }
+
+  .hero-img-sm {
+      display: block;
+      max-height: 16rem;
+      width: 100%;
+      margin: var(--space-md) 0 var(--space-xs) 0;
+  }
+
+  .container .home-divider hr {
+      display: none;
+  }
+
+  .hero {
+      width: 100%;
+      background-color: var(--colour-primary-shade2);
+  }
+
+  .hero-container {
+      height: 17rem;
+      margin-bottom: var(--space-xl);
+  }
+
+  .footer .follow, 
+  .footer .info,
+  .footer .signup {
+      display: none;
+  }
+
+  .featured-products-row{
+      margin: var(--space-xs) 0;
+      min-width: 1200px;
+  }
+
+  .footer-wrapper {
+      height: 5rem;
+  }
+}

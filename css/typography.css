@@ -1,0 +1,122 @@
+:root{
+  /* COLOURS */
+  --colour-accent-shade1: #FED379;
+  --colour-accent-shade2:#FDBB30;
+  --colour-primary-shade1: #FFFDF7;
+  --colour-primary-shade2: #F3EDE2;
+  --colour-primary-shade3: #EDE3D2;
+  --colour-primary-shade4: #E0D6C3;
+  --colour-black: #202020;
+
+  --font-primary: 'Cooper Lt BT', serif;
+  --font-secondary: 'Sharp Sans Display No1 TRIAL', sans-serif;
+  
+/* TYPE SCALE */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.2;
+  --text-xs: calc(var(--text-base-size) / var(--text-scale-ratio));
+  --text-sm: calc(var(--text-base-size) / var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-md: calc(var(--text-base-size) * var(--text-scale-ratio));
+  --text-lg: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(var(--text-base-size) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+/* SPACING */
+  --space-xxxs: 0.25em;
+  --space-xxs: 0.375em;
+  --space-xs: 0.5em;
+  --space-sm: 1em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 2.75em;
+  --space-xxl: 5.25em;
+  --space-xxxl: 7.5em;
+  --space-xxxxl: 10em;
+
+/* LINE WIDTH */
+--width-primary: 1px;
+}
+
+/* TYPOGRAPHY */
+/* FONTS */
+/* Cooper Lt BT*/
+@font-face {
+    font-family: 'Cooper Lt BT';
+    src: url('CooperBT-Light.woff2') format('woff2'),
+        url('CooperBT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+/* Sharp Sans Display No1*/
+@font-face {
+  font-family: 'Sharp Sans Display No1 TRIAL';
+  src: url('SharpSansDisplayNo1TRIAL-Bold.woff2') format('woff2'),
+      url('SharpSansDisplayNo1TRIAL-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Sans Display No1 TRIAL';
+  src: url('SharpSansDisplayNo1TRIAL-Semibold.woff2') format('woff2'),
+      url('SharpSansDisplayNo1TRIAL-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sharp Sans Display No1 TRIAL';
+  src: url('SharpSansDisplayNo1TRIAL-Medium.woff2') format('woff2'),
+      url('SharpSansDisplayNo1TRIAL-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@media screen and (max-width: 992px) {
+  :root {
+    --text-base-size: 0.85rem;
+  }
+}
+  
+/* STYLES */
+h1{
+  font-size: var(--text-xxl);
+  line-height: 125%;
+}
+
+h2{
+  font-size: var(--text-xl);
+  line-height: 125%;
+}
+
+h3{
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  line-height: 170%;
+}
+
+h4{
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: var(--text-md);
+  line-height: 170%;
+}
+
+p{
+  font-size: var(--text-sm);
+  line-height: 170%;
+  font-family: var(--font-secondary);
+  font-weight: 500;
+}
+
+i {
+  font-style: italic;
+}
+

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robinsons Bookshop</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+  	<link rel="stylesheet" href="css/styles.css">
+  	<link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/ui-elements.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <script src="js/navbar.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="nav-content container cluster">
+          <div class="cluster">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+        
+            <div class="dropdown nav-bar-left cluster">
+              <button class="dropbtn">SHOP▾</button>
+              <div class="dropdown-content">
+                <li><a href="#">Books▸</a>
+                <ul class="sub-dropdown">
+                  <li><a href="fiction.html">Fiction▸</a></li> 
+                </ul>  
+                <li><a href="#">Gifts▸</a></li>
+                <li><a href="#">Stationery▸</a></li>
+                <a href="#">Games▸</a>
+            </div>
+            
+            <button class="dropbtn">EVENTS</button>
+            <button class="dropbtn">LOCATIONS</button>
+          </div>
+        </div>
+      
+        <div class="cluster">
+          <div class="search search-container cluster">
+              <input type="text" placeholder="Search by keyword, title, author or ISBN">
+              <a href="books.html" class="btn btn-primary">SEARCH</a>
+          </div>
+          <a class="cart" href="cart.html"><img src="img/icons/cart.svg" alt="cart"></a>
+          <a class="account" href="account.html"><img src="img/icons/account.svg" alt="account"></a>
+        </div>
+      
+      <div class="hamburger-nav">
+        <input type="checkbox" id="menu"/>
+        <label for="menu"><img src="img/icons/menu.svg"></label>
+      
+        <div class="multi-level">
+            <div class="item">
+                <input type="checkbox" id="A"/>
+                <label for="A">SHOP</label><img src="img/icons/arrow.svg" class="arrow">
+      
+            <ul>
+                <li><div class="sub-item">
+                <input type="checkbox" id="A-A"/>
+                <label for="A-A">Books</label><img src="img/icons/arrow.svg" class="arrow">
+      
+                <ul>
+                  <li><div class="sub-sub-item">
+                    <input type="checkbox" id="A-A-A"/>
+                    <label for="A-A-A">Fiction</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><a href="fiction.html">All Fiction</a></li>
+                        <li><a href="#">Modern Literature</a></li>
+                        <li><a href="#">Crime & Mystery</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Classics</a></li>
+                        <li><a href="#">Young Adult</a></li>
+                      </ul>
+                    </div>
+                  
+                  <li><div class="sub-sub-item">
+                    <input type="checkbox" id="A-A-B"/>
+                    <label for="A-A-B">Non-Fiction</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><a href="#">All Non-Fiction</a></li>
+                        <li><a href="#">Biography & Memoir</a></li>
+                        <li><a href="#">Business & Finance</a></li>
+                        <li><a href="#">Food & Drink</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Self-Help & Motivation</a></li>
+                        <li><a href="#">Travel</a></li>
+                      </ul>
+                      </div>
+      
+                  <li><div class="sub-sub-item">
+                    <input type="checkbox" id="A-A-C"/>
+                    <label for="A-A-C">Kids</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><div class="sub-sub-sub-item">
+                          <input type="checkbox" id="A-A-C-A"/>
+                          <label for="A-A-C-A">By Age</label><img src="img/icons/arrow.svg" class="arrow">
+                            <ul>
+                              <li><a href="#">0-2 Years</a></li>
+                              <li><a href="#">3-5 Years</a></li>
+                              <li><a href="#">6-8 Years</a></li>
+                              <li><a href="#">9-11 Years</a></li>
+                              <li><a href="#">12-14 Years</a></li>
+                              <li><a href="#">14+ Years</a></li>
+                            </ul>
+                            
+                        <li><div class="sub-sub-sub-item">
+                          <input type="checkbox" id="A-A-C-B"/>
+                          <label for="A-A-C-B">By Genre</label><img src="img/icons/arrow.svg" class="arrow">
+                            <ul>
+                              <li><a href="#">General Fiction</a></li>
+                              <li><a href="#">General Non-Fiction</a></li>
+                              <li><a href="#">Classics</a></li>
+                              <li><a href="#">Art & Activity</a></li>
+                              <li><a href="#">Jokes & Riddles</a></li>
+                              <li><a href="#">Picture Books</a></li>
+                            </ul>
+                      </ul>
+      
+                  <li><div class="sub-sub-item">
+                    <input type="checkbox" id="A-A-D"/>
+                    <label for="A-A-D">Graus Comix</label><img src="img/icons/arrow.svg" class="arrow">
+                      <ul>
+                        <li><a href="#">Manga</a></li>
+                        <li><a href="#">Comics</a></li>
+                        <li><a href="#">Graphic Novels</a></li>
+                      </ul>
+                    </div>
+            </ul>
+        </div>
+      </div>
+        
+        <div class="item">
+            <input type="checkbox" id="B"/>
+            <label for="B">EVENTS</label>
+        </div>
+      
+        <div class="item">
+          <input type="checkbox" id="C"/>
+          <label for="C">LOCATIONS</label>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+      
+<div class="container">
+<div>
+    <h1>Checkout</h1>
+</div>
+
+<div class="checkout-container-left col-12">
+  <div class="contact-information col-12">
+      <h3>Contact Information</h3>
+      <input class="col-5" type="text" name="firstname" placeholder="First Name">
+      <input class="col-5" type="text" name="lastname" placeholder="Last Name">
+      <input class="col-10" type="text" name="email" placeholder="Email Address">
+      <input class="col-10" type="text" name="company" placeholder="Company (optional)">
+  </div>
+
+  <div class="shipping-address col-12">
+    <h3>Shipping Address</h3>
+    <input class="col-10" type="text" name="address-1" placeholder="Address 1">
+    <input class="col-10" type="text" name="address-2" placeholder="Address 2 (optional)">
+    <select class="col-5" name="country">
+      <option value="australia">Australia</option>
+    </select>
+    <select class="col-5" name="state">
+      <option value="VIC">VIC</option>
+      <option value="TAS">TAS</option>
+      <option value="NSW">NSW</option>
+      <option value="ACT">ACT</option>
+      <option value="QLD">QLD</option>
+    </select>
+    <input class="col-5" type="text" name="city" placeholder="City">
+    <input class="col-5" type="text" name="postcode" placeholder="Postcode">
+    <input class="col-5" type="text" name="phone" placeholder="Phone Number">
+  </div>
+
+  <div class="shipping-method col-12">
+    <h3>Shipping Method</h3>
+
+    <select class="col-10" name="state">
+      <option value="VIC">Standard Shipping ($9.00)</option>
+    </select>
+  </div>
+
+  <div class="payment col-12">
+      <h3>Payment</h3>
+      <input class="col-10" type="text" name="cardholder-name" placeholder="Cardholder Name">
+      <input class="col-10" type="text" name="card-no" placeholder="Card Number">
+      <input class="col-5" type="text" name="card-expiry" placeholder="MM/YY">
+      <input class="col-5" type="text" name="card-cvc" placeholder="CVC">
+  </div>
+</div>
+
+<div class="checkout-container-right col-4">
+  <h3>Order Summary</h3>
+
+  <div class="product-cart-desc col-3">
+    <a href="#" class="product-cart-title">Klara And The Sun</a>
+    <p class="product-cart-author">Kazuo Ishiguro</p>
+    <p class="product-cart-format">Paperback</p>
+    
+  </div>
+
+  <div class="product-cart-price col-2">
+    <p>$26.99</p>
+  </div>
+
+  <div class="quantity-container col-3">
+    <div class="quantity buttons_added">
+      <input type="button" value="-" class="minus">
+      <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+      <input type="button" value="+" class="plus">
+    </div>
+  </div>  
+
+  <div class="product-cart-subtotal col-2">
+    <p>$26.99</p>
+  </div>
+</div>
+<div class="cart-pay-buttons-container col-7">
+  <a href="cart.html" class="btn btn-text-left">BACK TO CART</a>
+  <a href="#" class="btn btn-primary">PAY NOW</a>
+</div>
+
+</div>
+<div class="footer-wrapper">
+  <div class="container">
+    <div class="footer">
+    <div class="logo col-2">
+      <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+    </div>
+
+    <div class="follow col-2">
+      <h4>FOLLOW</h4>
+        <ul class="socials">
+          <li><a href="#"><img src="img/social/facebook.svg" alt="facebook" class="social"></a></li>
+          <li><a href="#"><img src="img/social/instagram.svg" alt="instagram" class="social"></a></li>
+          <li><a href="#"><img src="img/social/twitter.svg" alt="twitter" class="social"></a></li>
+        </ul>
+    </div>
+  
+    <div class="info col-2">
+      <h4>INFO</h4>
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Privacy Policy</li>
+          <li>Shipping & Returns</li>
+        </ul>
+    </div>
+  
+    <div class="signup col-6">
+      <h4>STAY UPDATED</h4>
+      <p>Sign up to our mailing list to keep updated on upcoming events, product releases and promotions.</p>
+      <div class="email-container">
+        <input type="text" placeholder="Enter your email address">
+        <a href="#" class="btn btn-secondary">SIGN UP</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
